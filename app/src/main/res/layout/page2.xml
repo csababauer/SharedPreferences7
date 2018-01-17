@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#a8b6bf"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="-"
+            android:onClick="decrement"/>
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="+"
+            android:onClick="increment"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp">
+
+        <Button
+            android:id="@+id/revert"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:text="revert"
+            android:onClick="revert"/>
+
+        <Button
+            android:textSize="10sp"
+            android:id="@+id/clear"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="save and clear"
+            android:onClick="clear"/>
+
+        <Button
+            android:id="@+id/back"
+            android:textSize="10sp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="back to main"
+            android:onClick="back"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
